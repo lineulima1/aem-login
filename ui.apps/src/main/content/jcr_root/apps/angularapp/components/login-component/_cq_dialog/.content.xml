@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  Angular App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 Angular App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of Angular App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to Angular App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from Angular App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="LoginComponent"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <inputs composite="{Boolean}true"
+                       fieldLabel="Input Fields"
+                       jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                  <field cq-msm-lockable="./inputs"
+                         jcr:primaryType="nt:unstructured"
+                         name="./inputs"
+                         sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                     <items jcr:primaryType="nt:unstructured">
+                        <placeholder fieldLabel="Defina seu placeholder"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./placeholder"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <type fieldLabel="Escolha o tipo do seu input"
+                              jcr:primaryType="nt:unstructured"
+                              name="./type"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <name fieldLabel="Selecione o nome do seu input"
+                              jcr:primaryType="nt:unstructured"
+                              name="./name"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <imageSrcResType jcr:primaryType="nt:unstructured"
+                                         name="./imageSrc/sling:resourceType"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                         value="core/wcm/components/image/v2/image"/>
+                        <imageSrc allowUpload="{Boolean}false"
+                                  autoStart="{Boolean}false"
+                                  class="cq-droptarget"
+                                  fieldLabel="Imagem"
+                                  fileNameParameter="./imageSrc/fileName"
+                                  fileReferenceParameter="./imageSrc/fileReference"
+                                  jcr:primaryType="nt:unstructured"
+                                  mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                  multiple="{Boolean}false"
+                                  name="./imageSrc/file"
+                                  sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                  title="Drag to select image"
+                                  uploadUrl="${suffix.path}"
+                                  useHTML5="{Boolean}true"/>
+                        <imageAlt fieldLabel="Texto alternativo"
+                                  jcr:primaryType="nt:unstructured"
+                                  name="./imageAlt"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                     </items>
+                  </field>
+               </inputs>
+               <text cq-msm-lockable="./text"
+                     fieldLabel="Meu Texto"
+                     jcr:primaryType="nt:unstructured"
+                     name="./text"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <label cq-msm-lockable="./label"
+                      fieldLabel="Texto do botão"
+                      jcr:primaryType="nt:unstructured"
+                      name="./label"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <imagens composite="{Boolean}true"
+                        fieldLabel="Imagens Fields"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                  <field cq-msm-lockable="./imagens"
+                         jcr:primaryType="nt:unstructured"
+                         name="./imagens"
+                         sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                     <items jcr:primaryType="nt:unstructured">
+                        <myImageSrcResType jcr:primaryType="nt:unstructured"
+                                           name="./myImageSrc/sling:resourceType"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                           value="core/wcm/components/image/v2/image"/>
+                        <myImageSrc allowUpload="{Boolean}false"
+                                    autoStart="{Boolean}false"
+                                    class="cq-droptarget"
+                                    fieldLabel="Imagem"
+                                    fileNameParameter="./myImageSrc/fileName"
+                                    fileReferenceParameter="./myImageSrc/fileReference"
+                                    jcr:primaryType="nt:unstructured"
+                                    mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                    multiple="{Boolean}false"
+                                    name="./myImageSrc/file"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    title="Drag to select image"
+                                    uploadUrl="${suffix.path}"
+                                    useHTML5="{Boolean}true"/>
+                        <myImageAlt fieldLabel="Texto alternativo"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./myImageAlt"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <myClass fieldLabel="Classe CSS"
+                                 jcr:primaryType="nt:unstructured"
+                                 name="./myClass"
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                     </items>
+                  </field>
+               </imagens>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>

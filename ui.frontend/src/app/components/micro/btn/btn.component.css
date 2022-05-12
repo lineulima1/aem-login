@@ -1,0 +1,11 @@
+.login-button {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  border: 0px;
+  background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  color: white;
+  margin-top: 100px;
+}

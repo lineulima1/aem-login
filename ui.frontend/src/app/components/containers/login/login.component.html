@@ -1,0 +1,24 @@
+<section class="login">
+  <div class="loginLeft">
+    <app-typography [text]="text"></app-typography>
+    <div *ngFor="let input of inputs">
+      <app-input
+        [type]="input.type"
+        [name]="input.name"
+        [placeholder]="input.placeholder"
+        [imageSrc]="input.imageSrc.src"
+        [imageAlt]="input.imageAlt"
+      ></app-input>
+    </div>
+    <app-btn [label]="label"></app-btn>
+  </div>
+  <div class="loginRight">
+    <div *ngFor="let imagem of imagens">
+      <app-imagem
+        [myImageSrc]="imagem.myImageSrc.src"
+        [myImageAlt]="imagem.myImageAlt"
+        [myClass]="imagem.myClass"
+      ></app-imagem>
+    </div>
+  </div>
+</section>

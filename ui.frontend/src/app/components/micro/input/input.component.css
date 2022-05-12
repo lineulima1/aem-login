@@ -1,0 +1,21 @@
+.login-input {
+  background: #26292c;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+input::placeholder {
+  color: #e0e0e0;
+}
+.login-input-relative {
+  position: relative;
+}
+.login-image {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}

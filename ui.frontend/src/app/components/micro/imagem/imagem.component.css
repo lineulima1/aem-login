@@ -1,0 +1,10 @@
+.log {
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+.background {
+  display: flex;
+  max-width: 60vw;
+  height: auto;
+}

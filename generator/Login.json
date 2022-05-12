@@ -1,0 +1,122 @@
+{
+  "project-settings": {
+    "code-owner": "Angular App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "angularapp",
+    "model-interface-pkg": "com.angularapp.core.models",
+    "model-impl-pkg": "com.angularapp.core.models.impl"
+  },
+  "name": "login-component",
+  "title": "LoginComponent",
+  "group": "Angular App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "inputs",
+        "type": "multifield",
+        "model-name": "MultifieldInputModel",
+        "use-existing-model": false,
+        "label": "Input Fields",
+        "json-expose": true,
+        "items": [
+          {
+            "field": "placeholder",
+            "type": "textfield",
+            "label": "Defina seu placeholder",
+            "json-expose": true,
+            "json-property": "placeholder"
+          },
+          {
+            "field": "type",
+            "label": "Escolha o tipo do seu input",
+            "type": "textfield",
+            "json-expose": true,
+            "json-property": "type"
+          },
+          {
+            "field": "name",
+            "type": "textfield",
+            "label": "Selecione o nome do seu input",
+            "json-property": "name",
+            "json-expose": true
+          },
+          {
+            "field": "imageSrc",
+            "type": "image",
+            "label": "Imagem",
+            "json-expose": true,
+            "json-property": "imageSrc"
+          },
+          {
+            "field": "imageAlt",
+            "type": "textfield",
+            "label": "Texto alternativo",
+            "json-expose": true,
+            "json-property": "imageAlt"
+          }
+        ]
+      },
+
+      {
+        "field": "text",
+        "label": "Meu Texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "label",
+        "label": "Texto do botão",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "label"
+      },
+      {
+        "field": "imagens",
+        "type": "multifield",
+        "model-name": "MultifieldImageModel",
+        "use-existing-model": false,
+        "label": "Imagens Fields",
+        "json-expose": true,
+        "items": [
+          {
+            "field": "myImageSrc",
+            "type": "image",
+            "label": "Imagem",
+            "json-expose": true,
+            "json-property": "myImageSrc"
+          },
+          {
+            "field": "myImageAlt",
+            "type": "textfield",
+            "label": "Texto alternativo",
+            "json-expose": true,
+            "json-property": "myImageAlt"
+          },
+          {
+            "field": "myClass",
+            "type": "textfield",
+            "label": "Classe CSS",
+            "json-expose": true,
+            "json-property": "myClass"
+          }
+        ]
+      }
+    ]
+  }
+}

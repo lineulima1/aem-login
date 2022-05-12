@@ -1,0 +1,12 @@
+<div class="login-input-relative">
+  <input
+    [type]="type"
+    [name]="name"
+    class="login-input"
+    [placeholder]="placeholder"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange($event)"
+    required
+  />
+  <img [src]="imageSrc" [alt]="imageAlt" class="login-image" />
+</div>
